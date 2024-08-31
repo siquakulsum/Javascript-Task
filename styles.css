@@ -28,7 +28,8 @@ h1 {
     color: #ff69b4;
     margin-bottom: 20px;
     animation: slideIn 1s ease-out;
-    background: linear-gradient(to right, #ff69b4, #ffb6c1, #2b3be2e0, #ff69b4, #ffb6c1);
+    background: linear-gradient(to right,  #B8860B, #D4AF37, #f8b04b, #E5C370, #DAA520);
+    /* background: linear-gradient(to right, #ff69b4, #ffb6c1, #2b3be2e0, #ff69b4, #ffb6c1); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -44,7 +45,7 @@ h1 {
 .countdown-item {
     padding: 10px;
     border-radius: 30px;
-    background: linear-gradient(to right, #4575ef, #d75fe4, #ffb6c1);
+    background: linear-gradient(to right, #ffe96e, #FFEC8B, #CD853F, #B8860B);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background 0.3s ease;
     height: 100px;
@@ -56,7 +57,7 @@ h1 {
 
 .countdown-item:hover {
     transform: scale(1.1);
-    background: linear-gradient(to right, #8a2be2, #ff69b4, #ffb6c1);
+    background: linear-gradient(to right,  #B8860B, #D4AF37, #F7E6CE, #E5C370, #DAA520);
     cursor: pointer;
 }
 .countdown-item span {
