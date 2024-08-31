@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(new.jpg);
+    background-position: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+    background: linear-gradient(to right, #ff69b4, #ffb6c1, #2b3be2e0, #ff69b4, #ffb6c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.countdown-item {
+    padding: 10px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #4575ef, #d75fe4, #ffb6c1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    gap: 10%;
+    flex-direction: column;
+}
+
+.countdown-item:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #8a2be2, #ff69b4, #ffb6c1);
+    cursor: pointer;
+}
+.countdown-item span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.message {
+    font-size: 1.2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes sparkle {
+    0% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); }
+    50% { text-shadow: 0 0 20px rgba(255, 215, 0, 0.6); }
+    100% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); }
+}
+
