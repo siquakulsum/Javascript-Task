@@ -86,3 +86,24 @@ h1 {
     100% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); }
 }
 
+@media screen and (max-width: 768px) {
+    .countdown {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .countdown-item {
+      margin-bottom: 15px;
+    }
+  
+    .message {
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .countdown-item {
+      font-size: 18px;
+    }
+  }
+
