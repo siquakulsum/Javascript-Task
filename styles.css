@@ -102,6 +102,29 @@ h1 {
     .message {
       text-align: center;
     }
+    .message {
+      font-size: 12px;
+      animation: fadeIn 2s ease-in-out;
+      font-family: "Nunito", sans-serif;
+  }
+  h1 {
+    font-size: 20px;
+    width: 100%;
+    color: #ff69b4;
+    animation: slideIn 1s ease-out;
+    background: linear-gradient(to right,  #B8860B, #D4AF37, #f8b04b, #E5C370, #DAA520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60%;
+}
   }
   
   @media screen and (max-width: 576px) {
